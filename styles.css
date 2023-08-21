@@ -109,6 +109,41 @@ align-items: center
     border: none;
 }
 
+.links a:hover{
+    color: black;
+    transition: 200ms linear;
+}
+
+.songs-section{
+    background-color: orange;
+
+}
+.container-songs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 10px 0;
+}
+.song{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.song img{
+    height: 100px;
+    border-radius: 25px;
+}
+
+.songs-section h2{
+padding: 5px 0 0 5px;
+
+}
 
 @media screen and (max-width: 728px) {
 
@@ -121,7 +156,15 @@ align-items: center
 
 @media screen and (max-width: 425px) {
 
+    .song h1{
+        left: 63%;
+        font-size: 20px;
+    }
 
+    .song p{
+        left: 71%;
+        bottom: 25%
+    }
     .btn-menu {
         display: block    
     }
